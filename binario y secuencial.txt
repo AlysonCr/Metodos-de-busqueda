@@ -1,0 +1,29 @@
+Funcion busquedaSecuencial(arreglo: vector de enteros, numero: entero) : entero
+   Para i desde 0 hasta tamaño(arreglo)-1 hacer
+         Si arreglo[i] es igual a numero entonces
+               retornar 1
+          Fin si
+       Fin Para
+      retornar -1
+      Fin Funcion
+
+Funcion busquedaBinaria(arreglo: vector de enteros, numero: entero) : entero
+
+inicio = 0
+fin = tamaño(arreglo) - 1
+Mientras inicio <= fin hacer
+      medio = (inicio + fin) / 2
+        Si arreglo[medio] es igual a numero entonces
+        retornar medio
+         siNo
+
+    Si arreglo[medio] < numero entonces
+       inicio = medio + 1
+        SiNo
+      fin = medio - 1
+       fin Si
+Fin si
+      Fin mientras
+retornar -1 
+Fin Función 
+
